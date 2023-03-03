@@ -49,8 +49,8 @@
                     <a href="#contato">CONTATO</a>
                 </div>
                 <div id="navblackbutton">
-                    <button type="button"><a href="bookingform.html" target="_blank">AGENDAR HORÁRIO <img
-                                src="Imagens/icones/Relógio Icon.png"
+                    <button id="btninteractionbar" type="button"><a href="bookingform.html" target="_blank">AGENDAR
+                            HORÁRIO <img src="Imagens/icones Relógio Icon.png"
                                 alt="Ícone de relógio minimalista em preto e branco" width="15px"></a>
                     </button>
                 </div>
@@ -68,7 +68,7 @@
                     sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que
                     não parecem nem um pouco convincentes.</p>
                 <div class="navblackbutton">
-                    <button type="button"><a href="www.google.com.br" target="_blank">Saiba Mais <img
+                    <button id="btnmainimage" type="button"><a href="www.google.com.br" target="_blank">Saiba Mais <img
                                 src="Imagens/icones/Arrow Icon.png"
                                 alt="Ícone de duplas setas apontando para o lado direito" width="15px"></a>
                     </button>
@@ -84,28 +84,31 @@
             <div class="infosandimg">
                 <div class="infos">
                     <div>
-                        <h2>SOBRE A BUENO BEAUTY</h2>
+                        <div class="tittleaboutinfos">
+                            <h4 class="tittlesblack">SOBRE A</h4>
+                            <h3 class="tittlescolored">BUENO BEAUTY</h3>
+                        </div>
                         <p>asuhpdqhwçlodnbqlfnbqpibfiabfpiabsfipabifbqiwbifbqiwfbipqbfjasbfaqwuoihqfiowqoiwboiqbwoibcoiqbwoicbqhwçlodnbqlfnbqpibfiabfpiabsfipabifbqiwbifbqiwfbipqbfjasbfaqwuoihqfiowqoiwboiqbwoibcoiqbwoicbqoiwbcqoi
                         </p>
                     </div>
                     <!--A div a seguir é apenas para tratar os 4 mini textos acompanhados de imagem-->
                     <div id="minitextsinfos">
-                        <div>
+                        <div class="minitexts">
                             <img src="" alt="" width="">
                             <h5>Linha de utensílios de ponta</h5>
                             <p>aofhasofhponqponfóqnwpofnqopfnqpownfpqownfopqbwpibqwpibfpiwubfpqwbfpqqnfpasqf</p>
                         </div>
-                        <div>
+                        <div class="minitexts">
                             <img src="" alt="" width="">
                             <h5>Produtos da melhor qualidade</h5>
                             <p>aofhasofhponqponfóqnwpofnqopfnqpownfpqownfopqbwpibqwpibfpiwubfpqwbfpqqnfpasqf</p>
                         </div>
-                        <div>
+                        <div class="minitexts">
                             <img src="" alt="" width="">
                             <h5>Política de Higiene e cuidados sanitários</h5>
                             <p>aofhasofhponqponfóqnwpofnqopfnqpownfpqownfopqbwpibqwpibfpiwubfpqwbfpqqnfpasqf</p>
                         </div>
-                        <div>
+                        <div class="minitexts">
                             <img src="" alt="" width="">
                             <h5>Conforto e acolhimento</h5>
                             <p>aofhasofhponqponfóqnwpofnqopfnqpownfpqownfopqbwpibqwpibfpiwubfpqwbfpqqnfpasqf</p>
@@ -119,65 +122,130 @@
             </div>
 
             <div class="onlyservices">
-                <div>
-                    <h2>NOSSOS SERVIÇOS</h2>
+                <div class="tittleourservices">
+                    <h4 class="tittlesblack">NOSSOS</h4>
+                    <h3 class="tittlescolored">SERVIÇOS</h3>
                 </div>
                 <div class="divservices">
-                    <div>
-                        <h4>Lavagem Especial</h4>
-                        <p>asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
-                        <p>R$150,00</p>
-                        <button type="button"><a href="" target="_blank">AGENDAR HORÁRIO</a></button>
+                    <div class="definitionservices">
+                        <h5 class="tittlesservices">Lavagem Especial</h5>
+                        <p class="textaboutservices">asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
+                        <p class="pricesservices">R$150,00</p>
+                        <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                                HORÁRIO</a></button>
                     </div>
-                    <div>
-                        <h4>Corte Feminino</h4>
-                        <p>asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
-                        <p>R$150,00</p>
-                        <button type="button"><a href="" target="_blank">AGENDAR HORÁRIO</a></button>
+                    <div class="definitionservices">
+                        <h5 class="tittlesservices">Corte Feminino</h5>
+                        <p class="textaboutservices">asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
+                        <p class="pricesservices">R$150,00</p>
+                        <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                                HORÁRIO</a></button>
                     </div>
-                    <div>
-                        <h4>Escova</h4>
-                        <p>asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
-                        <p>R$10,00</p>
-                        <button type="button"><a href="" target="_blank">AGENDAR HORÁRIO</a></button>
+                    <div class="definitionservices">
+                        <h5 class="tittlesservices">Escova</h5>
+                        <p class="textaboutservices">asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
+                        <p class="pricesservices">R$10,00</p>
+                        <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                                HORÁRIO</a></button>
                     </div>
-                    <div>
-                        <h4>Luzes</h4>
-                        <p>asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
-                        <p>R$150,00</p>
-                        <button type="button"><a href="" target="_blank">AGENDAR HORÁRIO</a></button>
+                    <div class="definitionservices">
+                        <h5 class="tittlesservices">Luzes</h5>
+                        <p class="textaboutservices">asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
+                        <p class="pricesservices">R$150,00</p>
+                        <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                                HORÁRIO</a></button>
                     </div>
-                    <div>
-                        <h4>Entrelace</h4>
-                        <p>asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
-                        <p>R$100,00</p>
-                        <button type="button"><a href="" target="_blank">AGENDAR HORÁRIO</a></button>
+                    <div class="definitionservices">
+                        <h5 class="tittlesservices">Entrelace</h5>
+                        <p class="textaboutservices">asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
+                        <p class="pricesservices">R$100,00</p>
+                        <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                                HORÁRIO</a></button>
                     </div>
-                    <div>
-                        <h4>Coloração</h4>
-                        <p>asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
-                        <p>R$180,00</p>
-                        <button type="button"><a href="" target="_blank">AGENDAR HORÁRIO</a></button>
+                    <div class="definitionservices">
+                        <h5 class="tittlesservices">Coloração</h5>
+                        <p class="textaboutservices">asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
+                        <p class="pricesservices">R$180,00</p>
+                        <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                                HORÁRIO</a></button>
                     </div>
-                    <div>
-                        <h4>Penteado Festo</h4>
-                        <p>asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
-                        <p>R$100,00</p>
-                        <button type="button"><a href="" target="_blank">AGENDAR HORÁRIO</a></button>
+                    <div class="definitionservices">
+                        <h5 class="tittlesservices">Penteado Festo</h5>
+                        <p class="textaboutservices">asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
+                        <p class="pricesservices">R$100,00</p>
+                        <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                                HORÁRIO</a></button>
                     </div>
-                    <div>
-                        <h4>Selagem</h4>
-                        <p>asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
-                        <p>R$200,00</p>
-                        <button type="button"><a href="" target="_blank">AGENDAR HORÁRIO</a></button>
+                    <div class="definitionservices">
+                        <h5 class="tittlesservices">Selagem</h5>
+                        <p class="textaboutservices">asiqowbnoqwhroiqwhriwrqrqwqojwbfoq</p>
+                        <p class="pricesservices">R$200,00</p>
+                        <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                                HORÁRIO</a></button>
                     </div>
                 </div>
-            </div>  
+            </div>
         </section>
 
         <!--A próxima section vai ser para o desenvolvimento até o ponto sobre os profissionais-->
         <section>
+            <div>
+                <div class="divspaday">
+                    <div>
+                        <div class="tittlesspaday">
+                            <h4 class="tittleswhite">CONHEÇA NOSSO</h4>
+                            <h3 class="tittlecolored">DIA DE NOIVA</h3>
+                        </div>
+                        <p class="textswhite">aushuahfquihwfiquhwfoiquhfqiuhwfoiqhfoiqhfibsdkjbfksdbvslmg</p>
+                    </div>
+                    <div>
+                        <button class="btnspaday" type="button"><a href="">Mais informações</a></button>
+                    </div>
+                </div>
 
+                <div class="divspaday">
+                    <div>
+                        <div class="tittlesspaday">
+                            <h4 class="tittleswhite">RELAXE NO</h4>
+                            <h3 class="tittlecolored">SPA ZEN</h3>
+                        </div>
+                        <p class="textswhite">aushuahfquihwfiquhwfoiquhfqiuhwfoiqhfoiqhfibsdkjbfksdbvslmg</p>
+                    </div>
+                    <div>
+                        <button class="btnspaday" type="button"><a href="">Mais informações</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="newsletter">
+                <div id="tittlenewsletter">
+                    <h4 id="tittleprincipal">ASSINE</h4>
+                    <h3 id="tittlesecundary">NOSSA NEWSLETTER</h3>
+                    <p class="textswhite">aaaaaaaaaaaaaaaakkkkkkkkkkkkqwoqooooqwoooooooooooqoqqwpqwwwpqqlqklqkwkqlwjkr
+                    </p>
+                </div>
+                <div id="divbusca">
+                    <input type="text" placeholder="Informe seu e-mail...">
+                    <button id="btnsignnews">Assinar Newsletter</button>
+                </div>
+            </div>
+
+            <div>
+                <div id="divprofessionals">
+                    <img id="imgprofessionals" src="" alt="">
+                    <div class="tittle">
+                        <h4 class="tittleswhite">NOSSOS</h4>
+                        <h3 class="tittlecolored">PROFISSIONAIS</h3>
+                    </div>
+                    <div class="textswhite">
+                        <p>apqwçrnjqwonrbpioqwhrpqownerçtnqwptoenqwpothnqpwrithuiashoqfqwf</p>
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
         </section>
     </section>
 
