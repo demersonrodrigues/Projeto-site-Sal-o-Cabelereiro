@@ -7,76 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Imagens/favicon/favicon-16x16.png" type="image/x-icon">
+    <!-- font awesome import -->
+    <script src="https://kit.fontawesome.com/523942d4fb.js" crossorigin="anonymous"></script>
     <title>Bueno Beauty</title>
 </head>
 
 <body>
     <header>
         <!--O header está englobando até a parte da imagem principal contendo um texto e um botão "Saiba Mais"-->
-        <nav id="navbarinitial">
+        <nav>
             <!--A barra de navegação está se referindo apenas a parte mais superior contendo os links de contato-->
-            <div class="linksnavbar">
-                <a href=""><img src="Imagens/icones/E-mail Icon.png" alt="Ícone do gmail em preto e branco"
-                        width="20px"> seusalaofavorito@buenobeauty.com.br</a>
-                <a href=""><img src="Imagens/icones/Telefone Icon.png" alt="Ícone de Telefone em preto e branco"
-                        width="20px"> +55 (71) 0100-1010</a>
-                <a href=""><img src="Imagens/icones/Whatsapp Icon.png"
-                        alt="Ícone da rede social Whatsapp em preto e branco" width="20px">+55 (71) 9 9563-5561</a>
+            <div class="linksArea">
+                <a href=""><i class="fa-solid fa-envelope-open-text" alt="Ícone do gmail em preto e branco"> </i>
+                    seusalaofavorito@buenobeauty.com.br</a>
+                <a href=""><i class="fa-solid fa-phone-volume" alt="Ícone de Telefone em preto e branco"></i>
+                    +55 (71) 0100-1010</a>
+                <a href=""><i class="fa-brands fa-whatsapp" alt="Ícone da rede social Whatsapp em preto e branco"></i>
+                    +55 (71) 9 9563-5561</a>
             </div>
-            <div class="linksnavbar">
-                <p>Siga-me:</p>
-                <a href=""><img src="Imagens/icones/Youtube Icon.png"
-                        alt="Ícone da plataforma de streaming Youtube em preto e branco" width="20px"></a>
-                <a href=""><img src="Imagens/icones/Instagram Icon.png"
-                        alt="Ícone da rede social Instagram em preto e branco" width="20px"></a>
-                <a href=""><img src="Imagens/icones/Tik Tok Icon.png"
-                        alt="Ícone da rede social Tik Tok em preto e branco" width="20px"></a>
-                <a href=""><img src="Imagens/icones/Facebook Icon.png"
-                        alt="Ícone da rede social Facebook em preto e branco" width="20px"></a>
+            <div class="socialLinks">
+                <p>Siga-nos:</p>
+                <a href=""><i class="fa-brands fa-youtube"
+                        alt="Ícone da plataforma de streaming Youtube em preto e branco"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"
+                        alt="Ícone da rede social Instagram em preto e branco"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok" alt="Ícone da rede social Tik Tok em preto e branco"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"
+                        alt="Ícone da rede social Facebook em preto e branco"></i></a>
             </div>
         </nav>
 
-        <div class="interactionbar"> <!--Parte do código referindo-se à barra branca contendo informações da página-->
-            <div class="servicesbar">
-                <div class="imagehomepage"><img src="Imagens/Fotos homepage/logo homepage.png"
-                        alt="Ícone do site com nome Bueno Beauty com a logo ao meio" width="350px">
-                </div>
-                <div class="linksservices">
-                    <a href="#home">HOME</a>
-                    <a href="#sobre nós">SOBRE NÓS</a>
-                    <a href="#serviços">SERVIÇOS</a>
-                    <a href="#profissionais">PROFISSIONAIS</a>
-                    <a href="#contato">CONTATO</a>
-                </div>
-                <div id="navblackbutton">
-                    <button id="btninteractionbar" type="button"><a href="bookingform.html" target="_blank">AGENDAR
-                            HORÁRIO <img src="Imagens/icones Relógio Icon.png"
-                                alt="Ícone de relógio minimalista em preto e branco" width="15px"></a>
-                    </button>
-                </div>
-            </div>
+        <div id="menuBar"> <!--Parte do código referindo-se à barra branca contendo informações da página-->
 
-            <div class="mainimage">
-                <!--Código da imagem principal contendo a modelo centralizada na página com título grande e pequeno texto-->
-                <img src="Imagens/Fotos homepage/Model Main Image.png"
-                    alt="Foto de jovem mulher modelo de cabelos tom ruivo acobreado com pele clara e olhos verdes"
-                    width="400px">
-                <img src="Imagens/Fotos homepage/Background Circles.png"
-                    alt="Imagem contendo três circulos de cores e gradientes diferentes" width="">
-                <h1 class="tittlemainimage">SEUS CABELOS PRECISAM DOS CUIDADOS CERTOS.</h1>
-                <p id="textmainimage">Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria
-                    sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que
-                    não parecem nem um pouco convincentes.</p>
-                <div class="navblackbutton">
-                    <button id="btnmainimage" type="button"><a href="www.google.com.br" target="_blank">Saiba Mais <img
-                                src="Imagens/icones/Arrow Icon.png"
-                                alt="Ícone de duplas setas apontando para o lado direito" width="15px"></a>
-                    </button>
-                </div>
+            <div >
+                <img class="logo" src="Imagens/svg/logo.svg" alt="" srcset="">
             </div>
-
+            <div class="menuLinks">
+                <a href="#home">HOME</a>
+                <a href="#sobre nós">SOBRE NÓS</a>
+                <a href="#serviços">SERVIÇOS</a>
+                <a href="#profissionais">PROFISSIONAIS</a>
+                <a href="#contato">CONTATO</a>
+            
+                <a href="bookingform.html" class="menuButton" target="_blank">AGENDAR
+                        HORÁRIO </a>
+                        <!-- <img src="Imagens/icones Relógio Icon.png" alt="Ícone de relógio minimalista em preto e branco" width="15px"></a> -->
+                
+            </div>
         </div>
     </header>
+
+    <div class="mainimage">
+        <!--Código da imagem principal contendo a modelo centralizada na página com título grande e pequeno texto-->
+        <img src="Imagens/Fotos homepage/Model Main Image.png"
+            alt="Foto de jovem mulher modelo de cabelos tom ruivo acobreado com pele clara e olhos verdes"
+            width="400px">
+        <img src="Imagens/Fotos homepage/Background Circles.png"
+            alt="Imagem contendo três circulos de cores e gradientes diferentes" width="">
+        <h1 class="tittlemainimage">SEUS CABELOS PRECISAM DOS CUIDADOS CERTOS.</h1>
+        <p id="textmainimage">Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria
+            sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que
+            não parecem nem um pouco convincentes.</p>
+        <div class="navblackbutton">
+            <button id="btnmainimage" type="button"><a href="www.google.com.br" target="_blank">Saiba Mais <img
+                        src="Imagens/icones/Arrow Icon.png" alt="Ícone de duplas setas apontando para o lado direito"
+                        width="15px"></a>
+            </button>
+        </div>
+    </div>
+
 
     <!--Parte iniciada a partir do desenvolvimento da âncora #Sobre Nós-->
     <section>
