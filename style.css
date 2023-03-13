@@ -5,13 +5,26 @@
 
 body {
     height: 100vh;
-    width:  100vw;
+    width:  100%;
 }
 
+.centered {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 /* header styles */
 
-header nav {
-    display: flex;
+header nav {    
     background-color: #CDA582;
     align-items: center;
     font-size: 1.1em;
@@ -37,7 +50,6 @@ header .socialLinks a {
 }
 
 .socialLinks {
-    display: flex;
     color: white;
 }
 
@@ -46,7 +58,6 @@ header .socialLinks a {
 }
 
 #menuBar {
-    display: flex;
     line-height: 40px;
     align-items: center;
     justify-content: space-evenly;
@@ -58,7 +69,7 @@ header .logo {
 }
 
 .menuLinks {
-    color: white
+    color: white;
 } a {
     margin-right: 20px;
     color: #8D8D8D;
@@ -71,4 +82,165 @@ header .logo {
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+/* main area */
+main{
+    background-color: #dfb693;
+    background-image: url(Imagens/Fotos_homepage/Background\ Circles.png);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position-x: 10%;
+}
+
+#mainImage {
+    height: 430px;
+    text-align: center;
+    flex: 1;
+} 
+
+#mainImage img {
+    height: 430px;
+}
+.mainContent {
+    flex: 1;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainTitle {
+    margin-bottom: 30px;
+}
+
+#mainDescription {
+    width: 40vw;
+}
+
+.mainButton a {
+    color: white;
+}
+
+.mainButton button {
+    border: 0;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0px 10px 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: #202020;
+}
+
+/* seção about */
+#about {
+    align-items: center;
+    text-align: center;
+}
+
+.aboutImage {
+    height: 600px;
+}
+
+#infosContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos {
+    width: 80%;
+    text-align: left;
+}
+
+#infoMainText {
+    margin-bottom: 15px;
+}
+
+#infosArea div h5 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#infosArea {
+    justify-content: space-between;
+}
+
+#infosArea div h5{
+    font-size: 16px;
+}
+
+#infosArea div {
+    margin-bottom: 5px;
+    gap: 90px;
+}
+
+.tittlesblack {
+    font-size: 24px;
+}
+
+.tittlescolored {
+    color: #C8A180;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.miniTexts {
+    width: 49%;
+}
+
+.infosTitle {
+    color: black;
+    font-weight: bold;
+}
+
+.imageArea {
+    width: 100%;
+}
+
+#definitionArea {
+    justify-content: space-evenly;
+}
+
+.tittleourservices {
+    margin-top: 40px;
+    margin-bottom: 40px;    
+}
+
+.definitionservices {
+    max-width: 250px;
+    height: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #202020; */
+}
+
+.tittlesservices {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #CDA582;
+}
+
+.textaboutservices {
+
+}
+
+.pricesservices {
+    margin-top: 15px;
+}
+
+.btnschedule {
+    margin-top: 10px;
+    padding-left: 25px;
+    padding-right: 5px;
+    line-height: 35px;
+    border: 0;
+    background-color: #D9B79A;
+}
+
+.btnschedule a {
+    text-decoration: none;
+    color: white;
 }
