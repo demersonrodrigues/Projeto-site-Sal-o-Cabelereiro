@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formstyle.css">
+    <link rel="shortcut icon" href="Imagens/favicon/favicon-16x16.png" type="image/x-icon">
+    
+    <title>Bueno Beauty</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Agendamento</h1>
+        </div>
+
+        <form class="form" id="form">
+
+            <div class="formcontrol">
+                <label for="username" class="rotulo">Nome de usuário:</label>
+                <input type="text" id="username" placeholder="Digite seu nome..." required>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="formcontrol">
+                <label for="email" class="rotulo">Email:</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail..." required>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="formcontrol">
+                <label for="password" class="rotulo">Senha:</label>
+                <input type="password" id="password" placeholder="Digite sua senha..." required>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="formcontrol">
+                <label for="datetime" class="rotulo">Data e Hora:</label>
+                <input type="datetime-local" id="datetime" required>
+            </div>
+
+            <div>
+                <button type="submit">Agendar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
