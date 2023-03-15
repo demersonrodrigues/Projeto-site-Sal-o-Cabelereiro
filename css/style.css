@@ -1,11 +1,31 @@
 * {
     margin: 0;
+    border: 0px;
     padding: 0
 }
 
 body {
     height: 100vh;
     width:  100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.selectors {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.selectors:hover {
+    cursor: pointer;
+    color: #dbcbcb;
+}
+
+.white {
+    color: white;
 }
 
 .centered {
@@ -18,9 +38,18 @@ body {
     display: flex;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .flex-wrap {
     display: flex;
     flex-wrap: wrap;
+}
+
+.grow {
+    flex-grow: 1;
 }
 /* header styles */
 
@@ -87,7 +116,7 @@ header .logo {
 /* main area */
 main{
     background-color: #dfb693;
-    background-image: url(Imagens/Fotos_homepage/Background\ Circles.png);
+    background-image: url(../Imagens/Fotos_homepage/Background_Circles.png);
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-position-x: 10%;
@@ -223,10 +252,6 @@ main{
     color: #CDA582;
 }
 
-.textaboutservices {
-
-}
-
 .pricesservices {
     margin-top: 15px;
 }
@@ -243,4 +268,100 @@ main{
 .btnschedule a {
     text-decoration: none;
     color: white;
+}
+
+/* Nossos serviços */
+#know {
+    height: 380px;
+    background-image: url(../Imagens/Fotos_homepage/Rectangle48.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    flex: 1;
+}
+
+#relax {
+    height: 380px;
+    background-image: url(../Imagens/Fotos_homepage/Rectangle49.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1;
+}
+
+/* newsletter container */
+#newsletterContainer {
+    background-color: #936C4B;
+    height: 250px;
+}
+
+#newsletterContainer h5 {
+    color: #D9B79A;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#newsletterContainer h4 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#newsletterContainer p {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.newsInputArea input {
+    width: 340px;
+    font-size: 1em;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.newsInputArea button {
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* footer */
+
+footer {
+    height: 200px;
+    background-color: black;
+    color: white;
+}
+#centralFooter {
+    flex: 3;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#centralFooter img {
+    margin-top: 50px;
+    height: 50px;
+}
+
+#centralFooter div {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 60%;
+}
+
+.footerSection {
+    flex: 1;
+    text-align: left;
+    min-height: 100px;
+}
+
+.footerSection h4 {
+    color: #D9B79A;
 }

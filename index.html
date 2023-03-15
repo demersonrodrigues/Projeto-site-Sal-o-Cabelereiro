@@ -37,19 +37,20 @@
             </div>
         </nav>
 
-        <div class="flex" id="menuBar"> <!--Parte do código referindo-se à barra branca contendo informações da página-->
+        <div class="flex" id="menuBar">
+            <!--Parte do código referindo-se à barra branca contendo informações da página-->
 
             <div>
                 <img class="logo" src="Imagens/svg/logo.svg" alt="" srcset="">
             </div>
             <div class="menuLinks">
-                <a href="#home">HOME</a>
-                <a href="#sobre nós">SOBRE NÓS</a>
-                <a href="#serviços">SERVIÇOS</a>
-                <a href="#profissionais">PROFISSIONAIS</a>
-                <a href="#contato">CONTATO</a>
+                <a id="home">HOME</a>
+                <a id="sobreNos">SOBRE NÓS</a>
+                <a id="servicos">SERVIÇOS</a>
+                <a id="newsletter">NEWSLETTER</a>
+                <a id="contato">CONTATO</a>
 
-                <a href="bookingform.html" class="menuButton" target="_blank">AGENDAR
+                <a href="form.html" target="_self" class="menuButton" target="_blank">AGENDAR
                     HORÁRIO </a>
                 <!-- <img src="Imagens/icones Relógio Icon.png" alt="Ícone de relógio minimalista em preto e branco" width="15px"></a> -->
 
@@ -57,7 +58,7 @@
         </div>
     </header>
 
-    <main class="flex">
+    <main id="homeContainer" class="flex">
         <!--Código da imagem principal contendo a modelo centralizada na página com título grande e pequeno texto-->
         <div id="mainImage">
             <img src="Imagens/Fotos_homepage/Model Main Image.png"
@@ -82,16 +83,16 @@
 
 
     <!--Parte iniciada a partir do desenvolvimento da âncora #Sobre Nós-->
-    <section id="about" class="flex">
-        <div id="infosContainer" class="flex" >
+    <section id="aboutContainer" class="flex">
+        <div id="infosContainer" class="flex">
             <div class="infos">
                 <div>
                     <div class="tittleaboutinfos">
                         <h4 class="tittlesblack">SOBRE A</h4>
                         <h3 class="tittlescolored">BUENO BEAUTY</h3>
                     </div>
-                    <p id="infoMainText">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. 
+                    <p id="infoMainText">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         Velit officia consequat duis enim velit mollit</p>
                 </div>
                 <!--A div a seguir é apenas para tratar os 4 mini textos acompanhados de imagem-->
@@ -126,7 +127,7 @@
         </div>
         <!--FALTA ADICIONAR A IMAGEM LATERAL DO CABELO COM PENTE / (CASO VÁ UTILIZÁ-LA)-->
     </section>
-    <section>
+    <section id="servicosContainer">
         <div class="onlyservices">
             <div class="centered tittleourservices">
                 <h4 class="tittlesblack">NOSSOS</h4>
@@ -137,56 +138,56 @@
                     <h5 class="tittlesservices">Lavagem Especial</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$150,00</p>
-                    <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Corte Feminino</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$150,00</p>
-                    <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Escova</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$10,00</p>
-                    <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Luzes</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$150,00</p>
-                    <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Entrelace</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$100,00</p>
-                    <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Coloração</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$180,00</p>
-                    <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Penteado Festo</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$100,00</p>
-                    <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Selagem</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$200,00</p>
-                    <button class="btnschedule" type="button"><a href="" target="_blank">AGENDAR
+                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
             </div>
@@ -194,69 +195,72 @@
     </section>
 
     <!--A próxima section vai ser para o desenvolvimento até o ponto sobre os profissionais-->
-    <section>
-        <div>
-            <div class="divspaday">
-                <div>
-                    <div class="tittlesspaday">
-                        <h4 class="tittleswhite">CONHEÇA NOSSO</h4>
-                        <h3 class="tittlecolored">DIA DE NOIVA</h3>
-                    </div>
-                    <p class="textswhite">aushuahfquihwfiquhwfoiquhfqiuhwfoiqhfoiqhfibsdkjbfksdbvslmg</p>
-                </div>
-                <div>
-                    <button class="btnspaday" type="button"><a href="">Mais informações</a></button>
-                </div>
-            </div>
-
-            <div class="divspaday">
-                <div>
-                    <div class="tittlesspaday">
-                        <h4 class="tittleswhite">RELAXE NO</h4>
-                        <h3 class="tittlecolored">SPA ZEN</h3>
-                    </div>
-                    <p class="textswhite">aushuahfquihwfiquhwfoiquhfqiuhwfoiqhfoiqhfibsdkjbfksdbvslmg</p>
-                </div>
-                <div>
-                    <button class="btnspaday" type="button"><a href="">Mais informações</a></button>
-                </div>
-            </div>
-        </div>
-
-        <div id="newsletter">
-            <div id="tittlenewsletter">
-                <h4 id="tittleprincipal">ASSINE</h4>
-                <h3 id="tittlesecundary">NOSSA NEWSLETTER</h3>
-                <p class="textswhite">aaaaaaaaaaaaaaaakkkkkkkkkkkkqwoqooooqwoooooooooooqoqqwpqwwwpqqlqklqkwkqlwjkr
-                </p>
-            </div>
-            <div id="divbusca">
-                <input type="text" placeholder="Informe seu e-mail...">
-                <button id="btnsignnews">Assinar Newsletter</button>
-            </div>
-        </div>
-
-        <div>
-            <div id="divprofessionals">
-                <img id="imgprofessionals" src="" alt="">
-                <div class="tittle">
-                    <h4 class="tittleswhite">NOSSOS</h4>
-                    <h3 class="tittlecolored">PROFISSIONAIS</h3>
-                </div>
-                <div class="textswhite">
-                    <p>apqwçrnjqwonrbpioqwhrpqownerçtnqwptoenqwpothnqpwrithuiashoqfqwf</p>
-                </div>
-            </div>
-
+    <section id="extrasContainer" class="flex centered">
+        <div id="know" class="divspaday">
+            <!-- <img style="position: absolute; z-index: 2;" src="./Imagens/Fotos_homepage/Rectangle48.png" alt=""> -->
             <div>
+                <div class="tittlesspaday">
+                    <h4 class="tittleswhite">CONHEÇA NOSSO</h4>
+                    <h3 class="tittlecolored">DIA DE NOIVA</h3>
+                </div>
+                <p class="textswhite">Amet minim mollit non deserunt ullam coet minim mollit.</p>
+            </div>
+            <div>
+                <button class="btnspaday" type="button"><a href="">Mais informações</a></button>
+            </div>
+        </div>
 
+        <div id="relax" class="divspaday">
+            <!-- <img style="position: absolute; z-index: 2;" src="./Imagens/Fotos_homepage/Rectangle49.png" alt=""> -->
+            <div style="z-index: 1;">
+                <div class="tittlesspaday">
+                    <h4 class="tittleswhite">RELAXE NO</h4>
+                    <h3 class="tittlecolored">SPA ZEN</h3>
+                </div>
+                <p class="textswhite">Amet minim mollit non deserunt ullam coet minim mollit.</p>
+            </div>
+            <div>
+                <button class="btnspaday" type="button"><a href="">Mais informações</a></button>
             </div>
         </div>
     </section>
 
-    <footer> <!--Parte com fundo de cor em preto no final da página do site-->
+    <section id="newsletterContainer" class="flex-column centered">
+        <h5>Assine Nosssa</h5>
+        <h4>NEWSLETTER</h4>
+        <p>Cadastre-se para receber gratuitamente nossas promoções diretamente em seu e-mail.</p>
+        <div class="newsInputArea">
+            <input type="text" placeholder="Informe seu e-mail">
+            <button>Assinar Newsletter</button>
+        </div>
 
+    </section>
+
+    <footer id="contatoContainer" class="flex centered"> <!--Parte com fundo de cor em preto no final da página do site-->
+        <div id="centralFooter" class="centered flex-column">
+            <img src="Imagens/svg/Group 2.svg" alt="" srcset="">
+            <div class="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+        </div>
+        <div class="footerSection grow">
+            <h4>Empresa</h5>
+                <ul >
+                    <li id="sobreNos2" class="selectors">Sobre Nos</li>
+                    <li id="servicos2" class="selectors">Serviços</li>
+                    <li id="contato2" class="selectors">Contato</li>
+                </ul>
+        </div>
+        <div class="footerSection grow">
+            <h4>Contato</h5>
+                <ul>
+                    <li>Fale Conosco</li>
+                    <li>Agendar Horário </li>
+                    <li>(00) 0000-0000 </li>
+                    <li>(00) 00000-0000</li>
+                </ul>
+        </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
