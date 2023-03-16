@@ -54,7 +54,7 @@ body { /*ajeita como preferir se não ficar legal, coloração e tals tem que mo
 
 .formcontrol i {
     position: absolute;
-    top: 45px;
+    top: 38px;
     right: 10px;
     visibility: hidden;
 }
@@ -66,12 +66,42 @@ body { /*ajeita como preferir se não ficar legal, coloração e tals tem que mo
     visibility: hidden;
 }
 
-.formcontrol button {
-    background-color: lightskyblue;
-    border: 2px solid lightskyblue;
+.form button {
+    background-color: rgb(144, 114, 89);
+    border: 2px solid rgb(144, 114, 89);
     color: #fff;
-    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     width: 100%;
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: rgb(110, 194, 65);
+    border: 2px solid rgb(66, 151, 65);
+}
+
+.formcontrol.success input{
+    border-color: #2ecc71;
+}
+
+.formcontrol.error input{
+border-color: #e74c3c;
+}
+
+.formcontrol.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.formcontrol.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.formcontrol.error small {
+    color: #e74c3c;
+    visibility: visible;
 }

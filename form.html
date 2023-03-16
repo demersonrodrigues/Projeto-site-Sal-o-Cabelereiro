@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/formstyle.css">
     <link rel="shortcut icon" href="Imagens/favicon/favicon-16x16.png" type="image/x-icon">
-    
+
     <title>Bueno Beauty</title>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>Agendamento</h1>
         </div>
 
-        <form class="form" id="form">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get" id="form" class="form">
 
             <div class="formcontrol">
-                <label for="username" class="rotulo">Nome de usuário:</label>
-                <input type="text" id="username" min="2023" placeholder="Digite seu nome..." required>
+                <label for="username" class="rotulo">Nome:</label>
+                <input type="text" name="username" id="username" placeholder="Digite seu nome completo...">
                 <i class="fas fa-exclamation-circle"></i>
                 <i class="fas fa-check-circle"></i>
-                <small>Mensagem de erro</small>
+                <small>Mensagem de Erro</small>
             </div>
 
             <div class="formcontrol">
-                <label for="email" class="rotulo">Email:</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail..." required>
+                <label for="email" class="rotulo">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail...">
                 <i class="fas fa-exclamation-circle"></i>
                 <i class="fas fa-check-circle"></i>
-                <small>Mensagem de erro</small>
+                <small>Mensagem de Erro</small>
             </div>
 
             <div class="formcontrol">
-                <label for="password" class="rotulo">Senha:</label>
-                <input type="password" id="password" placeholder="Digite sua senha..." required>
+                <label for="tel" class="rotulo">Telefone:</label>
+                <input type="tel" name="tel" id="tel" placeholder="Informe número para contato...">
                 <i class="fas fa-exclamation-circle"></i>
                 <i class="fas fa-check-circle"></i>
-                <small>Mensagem de erro</small>
+                <small>Mensagem de Erro</small>
+            </div>
+
+            <div class="formcontrol">
+                <label for="services" class="rotulo">Serviços:</label>
+                <select name="services"  id="services">
+                    <option value="">-----</option>
+                    <option value="lavagem especial">Lavagem Especial</option>
+                    <option value="corte de cabelo">Corte de Cabelo</option>
+                    <option value="escova">Escova</option>
+                    <option value="luzes">Luzes</option>
+                    <option value="entrelace">Entrelace</option>
+                    <option value="coloração">Coloração</option>
+                    <option value="penteado festo">Penteado Festo</option>
+                    <option value="selagem">Selagem</option>
+                </select>
             </div>
 
             <div class="formcontrol">
                 <label for="datetime" class="rotulo">Data e Hora:</label>
-                <input type="datetime-local" id="datetime" required>
+                <input type="datetime-local" id="datetime" name="datetime">
             </div>
 
-            <div>
-                <button type="submit">Agendar</button>
-            </div>
+            <button type="submit" value="Agendar">Agendar</button>
         </form>
     </div>
 
@@ -56,4 +71,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
