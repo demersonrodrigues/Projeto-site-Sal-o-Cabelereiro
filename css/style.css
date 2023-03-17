@@ -24,6 +24,12 @@ img {
     color: #dbcbcb;
 }
 
+#ultimo-pedidos-panel {
+    background-color: #f1f1f1;
+    height: 100vw;
+    width: 250px;
+  }
+
 .white {
     color: white;
 }

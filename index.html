@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -27,13 +31,10 @@
             </div>
             <div class="flex socialLinks">
                 <p>Siga-nos:</p>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"
-                        alt="Ícone da plataforma de streaming Youtube em preto e branco"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"
-                        alt="Ícone da rede social Instagram em preto e branco"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" alt="Ícone da plataforma de streaming Youtube em preto e branco"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" alt="Ícone da rede social Instagram em preto e branco"></i></a>
                 <a href="https://www.tiktok.com/pt-BR" target="_blank"><i class="fa-brands fa-tiktok" alt="Ícone da rede social Tik Tok em preto e branco"></i></a>
-                <a href="https://pt-br.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"
-                        alt="Ícone da rede social Facebook em preto e branco"></i></a>
+                <a href="https://pt-br.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f" alt="Ícone da rede social Facebook em preto e branco"></i></a>
             </div>
         </nav>
 
@@ -50,7 +51,7 @@
                 <a id="newsletter">NEWSLETTER</a>
                 <a id="contato">CONTATO</a>
 
-                <a href="form.html" target="_self" class="menuButton" target="_blank">AGENDAR
+                <a href="formulario.php" target="_self" class="menuButton" target="_blank">AGENDAR
                     HORÁRIO </a>
                 <!-- <img src="Imagens/icones Relógio Icon.png" alt="Ícone de relógio minimalista em preto e branco" width="15px"></a> -->
 
@@ -61,9 +62,7 @@
     <main id="homeContainer" class="flex">
         <!--Código da imagem principal contendo a modelo centralizada na página com título grande e pequeno texto-->
         <div id="mainImage">
-            <img src="Imagens/Fotos_homepage/Model Main Image.png"
-                alt="Foto de jovem mulher modelo de cabelos tom ruivo acobreado com pele clara e olhos verdes"
-                width="400px">
+            <img src="Imagens/Fotos_homepage/Model Main Image.png" alt="Foto de jovem mulher modelo de cabelos tom ruivo acobreado com pele clara e olhos verdes" width="400px">
             <!-- <img class="bolhasImg"
             src="Imagens/Fotos homepage/Background Circles.png"
                 alt="Imagem contendo três circulos de cores e gradientes diferentes" width=""> -->
@@ -73,9 +72,7 @@
             <p id="mainDescription">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis enim velit mollit.</p>
             <div class="mainButton">
-                <button id="mainButton" type="button"><a href="form.html" target="_self">Saiba Mais <img
-                            src="Imagens/icones/Arrow Icon.png"
-                            alt="Ícone de duplas setas apontando para o lado direito" width="15px"></a>
+                <button id="mainButton" type="button"><a href="formulario.php" target="_self">Saiba Mais <img src="Imagens/icones/Arrow Icon.png" alt="Ícone de duplas setas apontando para o lado direito" width="15px"></a>
                 </button>
             </div>
         </div>
@@ -121,9 +118,7 @@
             </div>
         </div>
         <div class="imageArea">
-            <img style='height: 100%; width: 100%; object-fit: contain'
-                src="Imagens/Fotos_homepage/female-hairdresser-making-hairstyle-redhead-woman-beauty-salon 1.png" alt=""
-                width="">
+            <img style='height: 100%; width: 100%; object-fit: contain' src="Imagens/Fotos_homepage/female-hairdresser-making-hairstyle-redhead-woman-beauty-salon 1.png" alt="" width="">
         </div>
         <!--FALTA ADICIONAR A IMAGEM LATERAL DO CABELO COM PENTE / (CASO VÁ UTILIZÁ-LA)-->
     </section>
@@ -138,56 +133,56 @@
                     <h5 class="tittlesservices">Lavagem Especial</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$150,00</p>
-                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
+                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Corte de Cabelo</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$150,00</p>
-                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
+                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Escova</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$10,00</p>
-                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
+                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Luzes</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$150,00</p>
-                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
+                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Entrelace</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$100,00</p>
-                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
+                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Coloração</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$180,00</p>
-                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
+                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Penteado Festo</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$100,00</p>
-                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
+                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
                 <div class="definitionservices flex">
                     <h5 class="tittlesservices">Selagem</h5>
                     <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
                     <p class="pricesservices">R$200,00</p>
-                    <button class="btnschedule" type="button"><a href="form.html" target="_self">AGENDAR
+                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
                             HORÁRIO</a></button>
                 </div>
             </div>
@@ -236,6 +231,20 @@
 
     </section>
 
+    <div id="ultimo-pedidos-panel" style="position: absolute; right: -250px; display: none">
+        <h2>Últimos pedidos</h2>
+        <?php
+
+        if (isset($_SESSION['ultimoPedidos'])) {
+            foreach ($_SESSION['ultimoPedidos'] as $pedido) {
+                echo '<p>Id: ' . $pedido['id'] . ', Produto: ' . $pedido['produto'] . '</p>';
+            }
+        }
+        ?>
+    </div>
+
+    <button id="ultimo-pedidos-btn">Últimos pedidos</button>
+
     <footer id="contatoContainer" class="flex centered"> <!--Parte com fundo de cor em preto no final da página do site-->
         <div id="centralFooter" class="centered flex-column">
             <img src="Imagens/svg/Group 2.svg" alt="" srcset="">
@@ -244,7 +253,7 @@
         </div>
         <div class="footerSection grow">
             <h4>Empresa</h5>
-                <ul >
+                <ul>
                     <li id="sobreNos2" class="selectors">Sobre Nos</li>
                     <li id="servicos2" class="selectors">Serviços</li>
                     <li id="contato2" class="selectors">Contato</li>
@@ -260,7 +269,7 @@
                 </ul>
         </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
