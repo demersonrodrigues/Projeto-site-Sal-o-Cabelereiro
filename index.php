@@ -129,62 +129,68 @@ session_start();
                 <h3 class="tittlescolored">SERVIÇOS</h3>
             </div>
             <div id="definitionArea" class="flex-wrap centered">
-                <div class="definitionservices flex">
-                    <h5 class="tittlesservices">Lavagem Especial</h5>
-                    <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
-                    <p class="pricesservices">R$150,00</p>
-                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
-                            HORÁRIO</a></button>
-                </div>
-                <div class="definitionservices flex">
-                    <h5 class="tittlesservices">Corte de Cabelo</h5>
-                    <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
-                    <p class="pricesservices">R$150,00</p>
-                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
-                            HORÁRIO</a></button>
-                </div>
-                <div class="definitionservices flex">
-                    <h5 class="tittlesservices">Escova</h5>
-                    <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
-                    <p class="pricesservices">R$10,00</p>
-                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
-                            HORÁRIO</a></button>
-                </div>
-                <div class="definitionservices flex">
-                    <h5 class="tittlesservices">Luzes</h5>
-                    <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
-                    <p class="pricesservices">R$150,00</p>
-                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
-                            HORÁRIO</a></button>
-                </div>
-                <div class="definitionservices flex">
-                    <h5 class="tittlesservices">Entrelace</h5>
-                    <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
-                    <p class="pricesservices">R$100,00</p>
-                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
-                            HORÁRIO</a></button>
-                </div>
-                <div class="definitionservices flex">
-                    <h5 class="tittlesservices">Coloração</h5>
-                    <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
-                    <p class="pricesservices">R$180,00</p>
-                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
-                            HORÁRIO</a></button>
-                </div>
-                <div class="definitionservices flex">
-                    <h5 class="tittlesservices">Penteado Festo</h5>
-                    <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
-                    <p class="pricesservices">R$100,00</p>
-                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
-                            HORÁRIO</a></button>
-                </div>
-                <div class="definitionservices flex">
-                    <h5 class="tittlesservices">Selagem</h5>
-                    <p class="textaboutservices">Amet minim mollit non deserunt ullam coet minim mollit.</p>
-                    <p class="pricesservices">R$200,00</p>
-                    <button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR
-                            HORÁRIO</a></button>
-                </div>
+                <?php
+
+                // Verifica se o cache existe e ainda é válido
+                if (isset($_SESSION['servicos']) && (time() - $_SESSION['servicos']['timestamp']) < 3600) {
+                    $servicos = $_SESSION['servicos']['data'];
+                } else {
+                    try {
+                    // Conexão com o banco de dados
+                    $conexao = mysqli_connect("localhost", "root", "123456", "mydb");
+
+                    // Verifica se a conexão foi realizada com sucesso
+                    if (mysqli_connect_errno()) {
+                        echo "Falha ao conectar ao banco de dados: " . mysqli_connect_error();
+                    }
+
+
+
+                    // Consulta ao banco de dados
+                    $query = "SELECT nome, descricao, preco FROM servicos";
+                    $result = mysqli_query($conexao, $query);
+                    $servicos = array();
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            $servicos[] = $row;
+                        }
+                    }
+
+                    mysqli_free_result($result);
+
+                    // Fecha a conexão com o banco de dados
+                    mysqli_close($conexao);
+
+                    // Armazena os dados em cache na sessão
+                    $_SESSION['servicos'] = array(
+                        'timestamp' => time(),
+                        'data' => $servicos
+                    );
+
+                } catch (\Throwable $th) {
+                    //throw $th;
+                }
+                }
+
+                if (isset($servicos)) {
+            
+                    // Loop para exibir os resultados
+                    foreach($servicos as $servico) {
+                        $nome = $servico['nome'];
+                        $descricao = $servico['descricao'];
+                        $preco = $servico['preco'];
+                        
+                        echo '<div class="definitionservices flex">';
+                        echo '<h5 class="tittlesservices">' . $nome . '</h5>';
+                        echo '<p class="textaboutservices">' . $descricao . '</p>';
+                        echo '<p class="pricesservices">R$' . $preco . '</p>';
+                        echo '<button class="btnschedule" type="button"><a href="formulario.php" target="_self">AGENDAR HORÁRIO</a></button>';
+                        echo '</div>';
+                    }
+                } else {
+                    echo '<h5>Houve uma falha na comunicação com nosso servidor pedimos que tente novamente mais tarde</h5>';
+                }
+                ?>
             </div>
         </div>
     </section>
@@ -230,20 +236,6 @@ session_start();
         </div>
 
     </section>
-
-    <div id="ultimo-pedidos-panel" style="position: absolute; right: -250px; display: none">
-        <h2>Últimos pedidos</h2>
-        <?php
-
-        if (isset($_SESSION['ultimoPedidos'])) {
-            foreach ($_SESSION['ultimoPedidos'] as $pedido) {
-                echo '<p>Id: ' . $pedido['id'] . ', Produto: ' . $pedido['produto'] . '</p>';
-            }
-        }
-        ?>
-    </div>
-
-    <button id="ultimo-pedidos-btn">Últimos pedidos</button>
 
     <footer id="contatoContainer" class="flex centered"> <!--Parte com fundo de cor em preto no final da página do site-->
         <div id="centralFooter" class="centered flex-column">
